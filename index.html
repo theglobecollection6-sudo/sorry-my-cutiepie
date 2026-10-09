@@ -191,31 +191,5 @@
          src="music/our-song.mp3"
          loop
          preload="none"></audio>
-
-  <script>
-    const correctPassword = "amsorrycutie";
-
-    const passwordForm = document.getElementById("passwordForm");
-    const passwordInput = document.getElementById("passwordInput");
-    const errorMessage = document.getElementById("errorMessage");
-    const lockScreen = document.getElementById("lockScreen");
-    const welcomeScreen = document.getElementById("welcomeScreen");
-
-    passwordForm.addEventListener("submit", function (event) {
-      event.preventDefault();
-
-      if (passwordInput.value === correctPassword) {
-        lockScreen.classList.add("hidden");
-        welcomeScreen.classList.remove("hidden");
-        errorMessage.textContent = "";
-      } else {
-        errorMessage.textContent =
-          "Oops, that's not the magic word. Try again, cutie 💗";
-        passwordInput.value = "";
-        passwordInput.focus();
-      }
-    });
-  </script>
 </body>
 </html>
-```
