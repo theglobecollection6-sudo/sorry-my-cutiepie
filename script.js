@@ -172,7 +172,7 @@ function setupPasswordGate() {
     "The butterflies say: try again 🦋💗",
     "Oopsie! Our little secret needs the right key 💌",
     "Even my heart can't unlock that one 😂❤️",
-    "Pookie, think a little harder 🥹💞",
+    "Cutie, think a little harder 🥹💞",
     "Access denied… cuddles still approved 🫂💕",
     "The love alarm says: incorrect password 🚨💓",
     "Try again, sleepyhead 😴💗",
