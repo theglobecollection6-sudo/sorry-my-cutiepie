@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Letter From My Heart 💌</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">just for you ♡</a>
+    <button class="music-button" id="musicToggle">♫ Play Music</button>
+  </header>
+
+  <main class="page fade-in">
+    <div class="eyebrow">Something I need to tell you</div>
+    <h2>A letter, just for you.</h2>
+    <p class="intro">There are a few things I want you to know.</p>
+
+    <div class="panel">
+      <div class="envelope-wrap" id="envelope"
+           onclick="toggleEnvelope()"
+           role="button" tabindex="0"
+           aria-label="Open the envelope"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleEnvelope()}">
+        <div class="envelope">
+          <div class="envelope-letter">
+            <span>To my favourite person</span>
+            <div style="font-size:27px;margin-top:8px">I'm sorry ♡</div>
+          </div>
+          <div class="envelope-flap"></div>
+          <div class="envelope-seal">♥</div>
+        </div>
+      </div>
+
+      <p class="hint">Tap the envelope to open it ♡</p>
+
+      <div id="apologyPreview" class="hidden fade-in">
+        <h2 style="font-size:30px">I'm truly sorry.</h2>
+        <p>
+          My favourite part? ❤️🥹
+        </p>
+
+        <p>
+            It was always the little things, Cutie your innocent smile, our cute conversations, and the happiness you bring into my life. ❤️
+        </p>
+
+        <p>
+            I'm really sorry for hurting you yesterday night, Cutie. I'm sorry I didn't text you properly and made you feel bad. You never deserved that, and I never want to be the reason for your tears. 🥺💗
+        </p>
+
+        <p>
+           Please go to college today, my Cutie. 🫶🏻 Go enjoy your fest, have fun with your friends, take lots of pictures, laugh, and make beautiful memories. Don't miss these special moments because of what happened yesterday. Even if you're still upset with me, I understand. I just want to see you happy. ❤️
+        </p>
+
+        <p>
+            I'm sorry, my innocent girl. I'll try to be more careful with your heart. You deserve so much love, Cutie. Now please go and enjoy your day for me, okay? 🥹❤️🫂**
+        </p>
+
+        <div class="button-row">
+          <a class="btn" href="memories.html">Our little memories →</a>
+        </div>
+      </div>
+
+      <button class="btn secondary" id="openLetterButton"
+              onclick="revealApology()">
+        Open my letter 💌
+      </button>
+    </div>
+
+    <div class="button-row">
+      <a class="btn secondary" href="index.html">← Back</a>
+    </div>
+  </main>
+
+  <audio id="backgroundMusic" src="music/our-song.mp3"
+         loop preload="none"></audio>
+
+  <script>
+    function revealApology() {
+      document.getElementById("envelope").classList.add("open");
+      document.getElementById("apologyPreview").classList.remove("hidden");
+      document.getElementById("openLetterButton").classList.add("hidden");
+    }
+  </script>
+</body>
+</html>
