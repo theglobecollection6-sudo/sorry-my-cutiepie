@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#270d1b">
+  <title>Our Little Film 🎬</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="cinema">
+  <header class="site-header">
+    <a class="brand" href="index.html">our little universe ♡</a>
+    <button class="music-button" id="musicToggle">♫ Play Music</button>
+  </header>
+
+  <main class="page wide fade-in">
+    <div class="eyebrow">A little film about us</div>
+    <h1>Moments I'd<br><em>love to keep.</em></h1>
+
+    <p class="intro">
+      Some memories deserve to be watched again.
+      Here's a little collection of moments that mean something to me.
+    </p>
+
+    <div class="film-frame">
+      <video id="memoryVideo"
+             controls
+             playsinline
+             preload="metadata"
+             >
+        <source src="videos/our-memories.mp4" type="video/mp4">
+        Your browser cannot play this video.
+      </video>
+    </div>
+
+    <p class="hint">Put your phone sideways for a more cinematic view ♡</p>
+
+    <div class="film-caption">
+      <span class="film-dot"></span>
+      Every little moment has a story.
+    </div>
+
+    <div class="panel" style="margin-top:28px">
+      <div class="heart-icon">🎞️</div>
+      <h2>And this is only one chapter.</h2>
+      <p>
+        I can't change the moments I wish I'd handled differently.
+        But I can learn from them and choose to do better.
+      </p>
+      <div class="button-row">
+        <a class="btn secondary" href="memories.html">← Our photos</a>
+        <a class="btn" href="secrets.html">Find your surprises ✨</a>
+      </div>
+    </div>
+  </main>
+
+  <audio id="backgroundMusic"
+         src="music/our-song.mp3" loop preload="none"></audio>
+</body>
+</html>
